@@ -2,3 +2,7 @@
 DROP DATABASE library2;
 
 show engines ;
+
+LOCK INSTANCE FOR BACKUP;
+
+UNLOCK INSTANCE;
