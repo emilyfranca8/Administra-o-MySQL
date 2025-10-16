@@ -1,0 +1,12 @@
+
+CREATE TABLE 'itens_notas_fiscais' (
+    'NÚMERO' int(11) NOT NULL,
+    'CÓDIGO_DO_PRODUTO' varchar(10) NOT NULL,
+    'QUANTIDADE' int(11) NOT NULL,
+    'PREÇO' float NOT NULL,
+    PRIMARY KEY ('NUMERO', 'CODIGO_DO_PRODUTO'),
+    KEY 'CODIGO_DO_PRODUTO' ('XODIGO_DO_PRODUTO'),
+    CONSTRAINT 'itens_notas_fiscais_ibfk_1' FOREIGN KEY ('COIGO_DO_PRODUTO') REFERENCES
+    CONSTRAINT 'itens_notas_fiscais_ibfk_2' FOREIGN KEY ('NÚMERO') REFERENCES 'notas_fiscais'
+    ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai__ci;
+)
