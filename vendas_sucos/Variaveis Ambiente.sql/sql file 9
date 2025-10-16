@@ -8,5 +8,4 @@ CREATE TABLE 'itens_notas_fiscais' (
     KEY 'CODIGO_DO_PRODUTO' ('XODIGO_DO_PRODUTO'),
     CONSTRAINT 'itens_notas_fiscais_ibfk_1' FOREIGN KEY ('COIGO_DO_PRODUTO') REFERENCES
     CONSTRAINT 'itens_notas_fiscais_ibfk_2' FOREIGN KEY ('NÚMERO') REFERENCES 'notas_fiscais'
-    ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai__ci;
-)
+ )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai__ci;
