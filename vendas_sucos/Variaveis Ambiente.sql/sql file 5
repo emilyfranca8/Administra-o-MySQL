@@ -1,1 +1,1 @@
-EXPLAIN FORMAT=JSON SELECT A.NOME_DO_PRODUTO FROM tabela_de_produtos A;
+SELECT A.NOME_DO_PRODUTO FROM tabela_de_produtos A;

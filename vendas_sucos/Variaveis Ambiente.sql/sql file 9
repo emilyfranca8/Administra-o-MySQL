@@ -1,11 +1,24 @@
 
-CREATE TABLE 'itens_notas_fiscais' (
+ CREATE TABLE 'itens_notas_fiscais2' (
     'NÚMERO' int(11) NOT NULL,
     'CÓDIGO_DO_PRODUTO' varchar(10) NOT NULL,
     'QUANTIDADE' int(11) NOT NULL,
-    'PREÇO' float NOT NULL,
-    PRIMARY KEY ('NUMERO', 'CODIGO_DO_PRODUTO'),
-    KEY 'CODIGO_DO_PRODUTO' ('XODIGO_DO_PRODUTO'),
-    CONSTRAINT 'itens_notas_fiscais_ibfk_1' FOREIGN KEY ('COIGO_DO_PRODUTO') REFERENCES
-    CONSTRAINT 'itens_notas_fiscais_ibfk_2' FOREIGN KEY ('NÚMERO') REFERENCES 'notas_fiscais'
+    'PREÇO' float NOT NULL
+ )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai__ci;
+
+ CREATE TABLE 'notas_fiscais' (
+    'CPF' varchar(11) NOT NULL,
+    'MATRICULA' varchar(5) NOT NULL,
+    'DATA_VENDA' date DEFAULT NULL,
+    'NUMERO' int(11) NOT NULL,
+    'IMPOSTO' float NOT NULL
+ )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai__ci;
+
+ CREATE TABLE 'tabela_de_produtos2' (
+    'CODIGO_DO_PRODUTO' varchar(10) NOT NULL,
+    'NOME_DO_PRODUTO' varchar(50) DEFAULT NULL,
+    'EMBALAGEM' varchar(20) DEFAULT NULL,
+    'TAMANHO' varchar(10) DEFAULT NULL, 
+    'SABOR' varchar(20) DEFAULT NULL,
+    'PRECO_DE_LISTA' float NOT NULL
  )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai__ci;
