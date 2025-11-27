@@ -1,0 +1,7 @@
+
+-- 76517.94 (Original com PK e FK)
+-- 769497.31 (Sem PK e FK).
+
+SELECT A.NOME_DO_PRODUTO, C.QUANTIDADE 
+FROM tabela_de_produtos2 A INNER JOIN itens_notas_fiscais2 C 
+ON A.codigo_do_produto = C.codigo_do_produto;
